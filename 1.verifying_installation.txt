@@ -1,0 +1,23 @@
+Verify that is is running: 
+	- docker info
+
+Search for containers:
+	- docker search <name_of_container>
+
+Start the container:
+	- docker run <name_of_container> echo Hello World
+
+verify operations:
+	- docker ps; docker ps --all
+
+verify image and container:
+	- docker image list; docker container ls
+
+Start a shell on a container:
+	- docker run -it <name_of_container> /bin/bash
+
+To detach from a running contianer:
+	- Ctrl-P, Ctrl-Q
+
+To run Dokcer as a non root user:
+	- usermod -aG docker <user>
